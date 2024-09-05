@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    margin-left: 7.81vw;
+    margin-right: 10.81vw;
+}
+
+.header{
+    display:flex;
+    height:100px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color:white;
+    position: relative;
+}
+
+.header::after
+{
+    content:"";
+    position:absolute;
+    height:2px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    bottom:0;  
+}
+
+.Name
+{
+}
+
+li{
+    display:inline-block;
+    list-style: none;
+    margin-right: 5.21vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#about:hover{
+    transition: 0.5s ease-in-out;
+    color:rgb(49, 255, 203);
+    cursor:pointer;
+}
+#projects:hover{
+    transition: 0.5s ease-in-out;
+    color:rgb(49, 255, 203);
+    cursor:pointer;
+}
+
+.mainbody1{
+    color:white;
+    margin-top: 100px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height:200px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainbody1 .One{
+    font-size: 40px;
+}
+.mainbody1 .Two{
+    font-size: 60px;
+    margin-top: -30px;
+}
+.mainbody1 .Three{
+    font-size: 50px;
+    margin-top: -30px;
+}
+.mainbody1 .Four{
+    margin-top: -5px;
+    color:rgb(49, 255, 203) 
+}
+
+.imagepfp{
+   
+   filter: drop-shadow(0 0 1.75rem rgb(49, 255, 203));
+}
+
+.mainbody2{
+    color:white;  
+    margin-top: 250px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height:200px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.mainbody2 div p{
+    text-align: right;
+}
+
+.mainbody2 .One{
+    font-size: 40px;
+}
+.mainbody2 .Two{
+    font-size: 48px;
+    margin-top: -17px;
+}
+.mainbody2 .Three{
+    font-size: 50px;
+    margin-top: -30px;
+}
+.Four{
+    margin-top: -5px;
+    color:rgb(49, 255, 203) 
+}
+
+.imagepfp1{
+    filter: drop-shadow(0 0 1.75rem rgb(49, 255, 203));
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.mainprojects{
+    color:white;
+    margin-top: 350px;
+    font-size: 60px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.Projects{
+    position:relative;
+    font-weight: 400;
+}
+
+.Projects::after{
+    content:"";
+    position:absolute;
+    height:2px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    bottom:0;  
+    left:0;
+}
+
+.TitleSnake
+{
+    margin-top: 100px;
+    font-weight: 400;
+}
+
+.UsedLang
+{
+    font-size: 30px;
+    margin-top: -20px;
+    color:rgb(49, 255, 203) ;
+}
+
+.snakeimg
+{
+    border-radius: 10px;
+}
+
+a{
+    color:white;
+}
+
+.aligner{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@keyframes downtoup{
+    from{
+        opacity:0;
+        transform: translateY(40px);
+        color:rgb(49, 255, 203) ;
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes lefttoright{
+    from{
+        opacity:0;
+        transform: translateX(-100px);
+    }
+    to
+    {
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes righttoleft{
+    from{
+        opacity:0;
+        transform: translateX(100px);
+    }
+    to
+    {
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+
+.downtoup
+{
+    animation-name: downtoup;
+    animation-duration: 2s;
+}
+
+.lefttoright
+{
+    animation-name: lefttoright;
+    animation-duration: 2s;
+}
+
+.righttoleft
+{
+    animation-name: righttoleft;
+    animation-duration: 2s;
+}
+
+@media screen and (max-width:740px){
+    li{
+        display:block;
+    }
+    body{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .mainbody1{
+        display:block;
+    }
+    .mainbody2{
+        display:block;
+    }
+    .aligner{
+        display:block;
+    }
+    .snakeimg{
+        width:300px;
+    }
+    .imagepfp{
+        display:none;
+    }
+    .imagepfp1{
+        position:relative;
+        bottom:100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
